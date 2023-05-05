@@ -5,19 +5,3 @@ xdist <- function(X, mean0, GPsigma, addmean, sdobs, maxmin = "both", K = 1000L)
     .Call(`_ESMulti_xdist`, X, mean0, GPsigma, addmean, sdobs, maxmin, K)
 }
 
-rcpparma_hello_world <- function() {
-    .Call(`_ESMulti_rcpparma_hello_world`)
-}
-
-rcpparma_outerproduct <- function(x) {
-    .Call(`_ESMulti_rcpparma_outerproduct`, x)
-}
-
-rcpparma_innerproduct <- function(x) {
-    .Call(`_ESMulti_rcpparma_innerproduct`, x)
-}
-
-rcpparma_bothproducts <- function(x) {
-    .Call(`_ESMulti_rcpparma_bothproducts`, x)
-}
-
